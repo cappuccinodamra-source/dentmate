@@ -15,9 +15,26 @@ const Home: React.FC = () => {
             DentMate – Smart Dental <br className="hidden md:block" />
             <span className="text-primary-600">Clinic Management System</span>
           </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-600 mb-10">
+
+          {/* Arabic subtitle */}
+          <p
+            dir="rtl"
+            className="mt-2 max-w-2xl mx-auto text-lg text-slate-700 mb-2 text-right"
+          >
+            دينت ميت – نظام ذكي لإدارة عيادة الأسنان.
+          </p>
+          <p
+            dir="rtl"
+            className="max-w-2xl mx-auto text-base text-slate-600 mb-6 text-right"
+          >
+            نظّم ملفات المرضى، المواعيد، وخطط العلاج في مكان واحد بسيط وسريع يناسب
+            شغل العيادة اليومي.
+          </p>
+
+          <p className="mt-2 max-w-2xl mx-auto text-xl text-slate-600 mb-10">
             Manage patient records, appointments, and clinic workflow—all in one clean, easy-to-use platform.
           </p>
+
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               to="/demo"
@@ -38,7 +55,10 @@ const Home: React.FC = () => {
         {/* Decorative background blob */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full z-0 opacity-40 pointer-events-none">
           <div className="absolute top-20 left-20 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div
+            className="absolute top-40 right-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
+            style={{ animationDelay: '1s' }}
+          ></div>
         </div>
       </section>
 
@@ -51,7 +71,15 @@ const Home: React.FC = () => {
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Fast & Intuitive</h3>
-              <p className="text-slate-600">No training needed. Our interface is designed to be picked up in minutes, not days.</p>
+              <p className="text-slate-600">
+                No training needed. Our interface is designed to be picked up in minutes, not days.
+              </p>
+              <p
+                dir="rtl"
+                className="mt-2 text-sm text-slate-700 text-right"
+              >
+                واجهة سهلة جداً، الدكتور والمساعدة بتعلموها خلال دقائق بدون تدريب.
+              </p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
@@ -59,7 +87,15 @@ const Home: React.FC = () => {
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Scalable</h3>
-              <p className="text-slate-600">Works for clinics with hundreds of patients. Whether you're a solo practice or a multi-chair clinic.</p>
+              <p className="text-slate-600">
+                Works for clinics with hundreds of patients. Whether you're a solo practice or a multi-chair clinic.
+              </p>
+              <p
+                dir="rtl"
+                className="mt-2 text-sm text-slate-700 text-right"
+              >
+                بشتغل مع العيادات الصغيرة والكبيرة اللي فيها مئات المرضى وكذا كرسي.
+              </p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
@@ -67,7 +103,15 @@ const Home: React.FC = () => {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Secure Records</h3>
-              <p className="text-slate-600">Secure cloud-based medical records. Your patient data is encrypted and backed up daily.</p>
+              <p className="text-slate-600">
+                Secure cloud-based medical records. Your patient data is encrypted and backed up daily.
+              </p>
+              <p
+                dir="rtl"
+                className="mt-2 text-sm text-slate-700 text-right"
+              >
+                بيانات المرضى محفوظة على السحابة مع نسخ احتياطي يومي وحماية عالية.
+              </p>
             </div>
           </div>
         </div>
@@ -76,28 +120,94 @@ const Home: React.FC = () => {
       {/* Description Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-           <h2 className="text-3xl font-bold text-slate-900 mb-6">Streamline Daily Operations</h2>
-           <p className="text-xl text-slate-600 leading-relaxed">
-             DentMate helps dental clinics streamline daily operations, reduce paperwork, and serve patients faster. Built for dentists, assistants, and reception teams who want simplicity and efficiency.
-           </p>
-           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto">
-              <div className="flex items-center space-x-3">
-                <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
-                <span className="text-slate-700">Digital Patient Forms</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
-                <span className="text-slate-700">Automated SMS Reminders</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
-                <span className="text-slate-700">Financial Reporting</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
-                <span className="text-slate-700">Inventory Management</span>
-              </div>
-           </div>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Streamline Daily Operations</h2>
+          <p className="text-xl text-slate-600 leading-relaxed mb-4">
+            DentMate helps dental clinics streamline daily operations, reduce paperwork, and serve patients faster. Built for dentists, assistants, and reception teams who want simplicity and efficiency.
+          </p>
+          <p
+            dir="rtl"
+            className="text-lg text-slate-700 leading-relaxed mb-10 text-right"
+          >
+            دينت ميت بيساعدك ترتّب شغل العيادة اليومي، تقلّل الورق، وتخلي استقبال
+            المريض والدخول على الكرسي أسرع وأسلس لإلك وللفريق.
+          </p>
+
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+            <div className="flex items-center space-x-3">
+              <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
+              <span className="text-slate-700">Digital Patient Forms</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
+              <span className="text-slate-700">Automated SMS Reminders</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
+              <span className="text-slate-700">Financial Reporting</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <CheckCircle2 className="text-primary-600 w-5 h-5 flex-shrink-0" />
+              <span className="text-slate-700">Inventory Management</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 bg-slate-50 border-t border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">
+            Pricing Plans
+          </h2>
+          <p className="text-slate-600 text-center mb-10">
+            Start simple and scale as your clinic grows.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Starter Plan */}
+            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 flex flex-col">
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Starter Clinic</h3>
+              <p className="text-3xl font-extrabold text-primary-600 mb-1">$29<span className="text-base font-normal text-slate-600">/month</span></p>
+              <p className="text-slate-600 mb-4">For small clinics or single-dentist practices.</p>
+              <p dir="rtl" className="text-sm text-slate-700 mb-4 text-right">
+                مناسب لعيادة صغيرة أو دكتور واحد، بداية ممتازة لتجربة النظام.
+              </p>
+              <ul className="space-y-2 mb-6 text-slate-700">
+                <li>• 1 doctor</li>
+                <li>• Up to 500 patients</li>
+                <li>• Appointments & basic reports</li>
+                <li>• Email support</li>
+              </ul>
+            </div>
+
+            {/* Pro Plan */}
+            <div className="bg-white rounded-2xl shadow-sm border-2 border-primary-500 p-8 flex flex-col relative">
+              <span className="absolute -top-3 right-6 text-xs font-semibold bg-primary-500 text-white px-3 py-1 rounded-full">
+                Recommended
+              </span>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Clinic Pro</h3>
+              <p className="text-3xl font-extrabold text-primary-600 mb-1">$79<span className="text-base font-normal text-slate-600">/month</span></p>
+              <p className="text-slate-600 mb-4">For busy clinics with multiple dentists.</p>
+              <p dir="rtl" className="text-sm text-slate-700 mb-4 text-right">
+                مناسب للعيادات المتوسطة والكبيرة اللي فيها أكثر من دكتور وحركة مرضى عالية.
+              </p>
+              <ul className="space-y-2 mb-6 text-slate-700">
+                <li>• Up to 5 doctors</li>
+                <li>• Unlimited patients</li>
+                <li>• Advanced reports & analytics</li>
+                <li>• WhatsApp / SMS reminders module</li>
+                <li>• Priority support</li>
+              </ul>
+            </div>
+          </div>
+
+          <p
+            dir="rtl"
+            className="mt-10 text-center text-slate-700 text-sm"
+          >
+            بإمكاننا نعمل سعر خاص للعيادات اللي بتشترك من خلال الزيارة الميدانية
+            ونجرب النظام معكم لمدة ٣ أيام قبل ما تعتمدوه بشكل كامل.
+          </p>
         </div>
       </section>
     </div>
